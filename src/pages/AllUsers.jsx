@@ -23,7 +23,7 @@ function AllUsers() {
 
   return (
     <div className='py-[173px] px-[194px] bg-[#E6EAF8]'>
-    <div className='bg-white max-w-[1213px] max-h-[854px]'>
+    <div className='bg-white mx-auto'>
       <Header/>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-4 sm:mx-8 md:mx-[100px] mt-[70px]'>
       {users.map(user => (
