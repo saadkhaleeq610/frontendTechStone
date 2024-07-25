@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Header/>
-      <div className='flex flex-wrap gap-4 mx-[100px]'>
+      <div className='grid grid-cols-3 gap-4 mx-[100px] mt-[70px]'>
       {users.map(user => (
         <Card key={user.id} user={user} />
       ))}

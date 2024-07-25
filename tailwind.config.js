@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      Poppins: ["Poppins"],
+      MerriWeather: ["Merriweather"]
+    }
   },
   plugins: [],
 }
