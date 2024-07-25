@@ -22,10 +22,10 @@ function AllUsers() {
   }, []);
 
   return (
-    <div className='lg:py-[15px] lg:px-[50px]  bg-[#E6EAF8]'>
+    <div className='lg:py-[25px] md:px-[80px] sm:py-[10px] sm:px-[25px] bg-[#E6EAF8]'>
     <div className='bg-white'>
       <Header/>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-4 sm:mx-8 md:mx-[100px] mt-[70px]'>
+      <div className='grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4 mx-4 sm:mx-8 mt-[70px]'>
       {users.map(user => (
         <Card key={user.id} user={user} />
       ))}

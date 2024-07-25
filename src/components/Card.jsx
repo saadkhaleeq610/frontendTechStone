@@ -4,11 +4,11 @@ function Card({ user }) {
   return (
     <div className="bg-white rounded-2xl p-4 flex gap-4 w-[327px] h-[208px] transition-transform duration-10 hover:scale-80 hover:shadow-lg hover:border-[#BFC8E5] border border-transparent">
       <div className="w-24 h-24 rounded-full mt-3 overflow-hidden">
-          <img
-            src={user.avatar}
-            alt={`${user.first_name} ${user.last_name}'s avatar`}
-            className="w-full h-full object-cover"
-          />
+        <img
+          src={user.avatar}
+          alt={`${user.first_name} ${user.last_name}'s avatar`}
+          className="w-full h-full object-cover"
+        />
       </div>
       <div className="flex flex-col mt-5">
         <h3 className="font-black font-MerriWeather text-lg">{`${user.first_name} ${user.last_name}`}</h3>

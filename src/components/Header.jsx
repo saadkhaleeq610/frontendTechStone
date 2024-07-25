@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <>
-      <div className="mx-4 sm:mx-8 md:mx-[100px] mt-[100px]">
+      <div className="sm:mx-8 mt-[100px]">
         <div>
           <h1 className="pt-10 text-2xl md:text-[32px] mt-[100px] font-black font-MerriWeather text-gray-900 text-left">
             Users
