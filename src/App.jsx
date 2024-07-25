@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { Provider } from "react-redux";
 import { store } from "./store/store";
 import Slider from './components/Slider';
+import AllUsers from './pages/AllUsers';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -26,13 +27,7 @@ function App() {
   return (
     <>
     <Provider store={store}>
-      <Header/>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-4 sm:mx-8 md:mx-[100px] mt-[70px]'>
-      {users.map(user => (
-        <Card key={user.id} user={user} />
-      ))}
-      </div>
-      <Slider/>
+      <AllUsers/>
     </Provider>
     </>
   )
