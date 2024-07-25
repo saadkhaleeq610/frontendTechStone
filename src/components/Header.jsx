@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { setPage } from "../store/pageSlice";
 import SearchIcon from "../assets/SearchIcon";
 
-function Title(props) {
+function Header() {
   const currentPage = useSelector((state) => state.page);
   const dispatch = useDispatch();
 
@@ -15,9 +15,9 @@ function Title(props) {
 
   return (
     <>
-      <div className="max-w-7xl mx-4 sm:mx-8 md:mx-[100px] mt-8 md:mt-[100px]">
+      <div className="mx-4 sm:mx-8 md:mx-[100px] mt-[100px]">
         <div>
-          <h1 className="text-2xl md:text-[32px] font-black font-MerriWeather text-gray-900 text-left">
+          <h1 className="pt-10 text-2xl md:text-[32px] mt-[100px] font-black font-MerriWeather text-gray-900 text-left">
             Users
           </h1>
         </div>
@@ -55,4 +55,4 @@ function Title(props) {
   );
 }
 
-export default Title;
+export default Header;
