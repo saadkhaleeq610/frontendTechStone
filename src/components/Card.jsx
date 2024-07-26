@@ -2,7 +2,7 @@ import React from "react";
 
 function Card({ user }) {
   return (
-    <div className="bg-white rounded-2xl p-4 flex gap-4 w-[327px] h-[208px] transition-transform duration-10 hover:scale-80 hover:shadow-lg hover:border-[#BFC8E5] border border-transparent">
+    <div className="bg-[#FBFCFF] rounded-2xl p-4 flex gap-4 w-[327px] h-[208px] transition-transform duration-10 hover:scale-80 hover:shadow-lg hover:border-[#BFC8E5] border border-transparent">
       <div className="w-24 h-24 rounded-full mt-3 overflow-hidden">
         <img
           src={user.avatar}
